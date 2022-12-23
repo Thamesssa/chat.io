@@ -3,9 +3,8 @@ const express = require('express')
 const app = express()
 const config = require('./config/app')
 
-
 app.get('/home' ,(req, res ) =>{
-    return res.send('Home Screen')
+    return res.send('<h1>Home Screen</h1>')
 })
 
 app.get('/login', (req, res) =>{
